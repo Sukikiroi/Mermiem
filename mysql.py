@@ -266,7 +266,7 @@ def add_ta():
 def Arbrepredict():
     title = request.get_json()
     print(title['Name'])
-    myCsvRow=str(title['Name'])+','+str(title['ESOL'])+',2,'+str(title['Weight'])+','+str(title['HBond'])+','+str(title['Rings'])+','+str(title['Rotatable'])+',,,'
+    myCsvRow=str(title['Name'])+','+'LSN2322600|LY2228820 DIMESYLATE|RALIMETINIB MESYLATE'+','+str(title['Minimum'])+','+'612.75,2,4' + ','+str(title['Number'])+','+','+str(title['measured'])+','+'CC12CCC3C(CCc4cc(O)ccc34)C2CCC1O,1 1 1 0 0 0 0 1 1 0,0'
     with open('predict.csv','a') as fd:
       fd.write("\n"+myCsvRow)
     Tests = []
